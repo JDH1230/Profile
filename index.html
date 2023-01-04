@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="전대현">
+    <meta name="description" content="프로필 포트폴리오">
+    <title>My Profile Porfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="./js/typing.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <div class="container" id="top">
+        <div class="mobile-menu" onclick="gnb_show()" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="gnb"  onmouseleave="gnb_none()">
+            <ul id="gnb">
+                <li><div class="gnb-detail"><a href="#">Home</a></div></li>
+                <li><div class="gnb-detail"><a href="#about">About</a></div></li>
+                <li><div class="gnb-detail"><a href="#skill">Skills</a></div></li>
+                <li><div class="gnb-detail"><a href="#project">Projects</a></div></li>
+                <li><div class="gnb-detail"><a href="#contact">Contact</a></div></li>
+            </ul>
+        </div>
+
+        <h1>Welcome to</h1>
+        <h2 id="typeStyle"></h2>
+
+        <div class="intro" id="about">
+            <p>Introduce Me<img src="./img/chalk.png" alt="chalk"></p>
+            <span class="line"></span>
+            <div class="img-profile-flexbox">
+                <div class="img">
+                    <span class="circle"></span>
+                </div>
+                <div class="profile" data-aos="fade-up" data-aos-duration="1000">
+                    <p><span class="strong">'한번 시작한 일은 미친듯이 몰입하는' </span><br>전대현 입니다.</p>
+                    <p class="text">어렸을 때 즐겨하던 게임이 하나 있었는데 그 
+                        게임을 상위 1% 에 도달할 때 까지 연구하면서 
+                        잠도 안자고 연습을 해서 결국 1%에 달성했었습니다. 어릴때의 경험을 기반으로 삼아서
+                        현재 자바스크립트와 리액트를 배운 내용 포함해서 끊임없이 복습하면서 연구하고 있습니다. 
+                        앞으로도 수없이 변하는 정보에 맞서서 카멜레온 처럼 적응하는 웹 개발자가 되겠습니다.
+                                
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="skill" id="skill" data-aos="fade-up" data-aos-duration="1000">
+            <p data-aos="fade-right" data-aos-duration="1000">My Skills<img src="./img/chalk.png" alt="chalk"></p>
+            <span class="line"></span>
+            <div class="detail-circle">
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                        <circle class="gauge__circle" stroke-width="2" stroke-dasharray="95,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                        <g class="gauge__info">
+                            <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">95%</text>
+                        </g>
+                        </svg>
+                    </div>
+                    <p class="subject">Html</p>
+                    <p class="text">HTML5에 사용중인 시멘틱 태그를
+                        활용하여 반응형에 적응할 수 잇는
+                        페이지를 제작 가능합니다. </p>
+                </div>
+                
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="80,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">80%</text>
+                            </g>
+                        </svg>
+                    </div> 
+                    <p class="subject1">Ilustrator</p>
+                    <p class="text">일러스트레이터를 활용하여 홈페이지
+                        메인 & 서브페이지 및 커버 이미지
+                        디자인이 가능합니다.   	</p>
+                </div>
+    
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="90,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">90%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject2">PhotoShop</p>
+                    <p class="text1">포토샵을 활용하여 구현하고자 하는
+                        사이트의 UI, UX 기획서를 작성
+                        가능합니다.   	</p>
+                </div>
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="95,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">95%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject">CSS</p>
+                    <p class="text1">CSS를 활용하여 구성 및 위치조절이
+                        가능하고 CSS3 애니메이션을 구현
+                        가능합니다.  </p>
+                </div>
+
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="75,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">75%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject2">JavaScript</p>
+                    <p class="text">자바스크립트 의 기본적인 활용 및
+                        Jquery.js , React.js 활용이 가능하며
+                        배열 , 객체의 이해 및 상호작용하는
+                        애니메이션 구현이 가능합니다.   </p>
+                </div>
+
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="95,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">95%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject">Sass</p>
+                    <p class="text">중복을 최소화하여 코드를 간결화 시
+                        키거나 믹스인을 활용하여 효율적인
+                        코딩이 가능합니다.  </p>
+                </div>
+
+                
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="80,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">80%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject3">Jquery</p>
+                    <p class="text1">Jquery를 활용하여 슬라이드, 풀페이지 
+                        및 동적 인터페이스를 구현 가능합니다. </p>
+                </div>
+
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="70,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">70%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject4">React</p>
+                    <p class="text1">JSX와 Babel을 활용한 빠른 작성이 가능
+                        하고 React를 활용한 간단한 프로젝트
+                        를 진행할 수 있습니다.   </p>
+                </div>
+
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="50,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">50%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject3">Node.js</p>
+                    <p class="text1">JSX와 Babel을 활용한 빠른 작성이 가능
+                        하고 React를 활용한 간단한 프로젝트
+                        를 진행할 수 있습니다.   </p>
+                </div>
+
+                <div class="detail">
+                    <div class="wrapper">
+                        <svg class="gauge" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="gauge__background" stroke-width="2" fill="white" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="gauge__circle" stroke-width="2" stroke-dasharray="80,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="gauge__info">
+                                <text x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">80%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="subject1">BootStrap</p>
+                    <p class="text1">JSX와 Babel을 활용한 빠른 작성이 가능
+                        하고 React를 활용한 간단한 프로젝트
+                        를 진행할 수 있습니다.   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="project" data-aos="fade-up" data-aos-duration="1000">
+            <p data-aos="fade-right" data-aos-duration="1000">Projects<img src="./img/chalk.png" alt="chalk"></p>
+            <span class="line" data-aos="fade-right" data-aos-duration="1000"></span>
+
+            <p class="filter">Page Renewal</p>
+
+            <div class="portfolio">
+                <div class="renewal-1">
+                    <div class="img" data-aos="fade-up-right" data-aos-duration="1000">
+                        <img src="./img/renewal1.png" alt="">
+                    </div>
+                    <div class="portfolio-detail" data-aos="fade-up-left" data-aos-duration="1000">
+                        <p class="title">#1 Game Heaven</p>
+                        <p class="detail">참여인원 : 1명 <br> 
+                            소요기간 : 4주(2022.10.01 ~ 2022.10.28)<br>
+                            사용언어 : HTML5, CSS3, Javascript
+                        </p>
+                        <p class="detail-text">
+                            기존에 있는 게임들을 가지고 새로운 게임
+                            사이트를 만들었습니다.<br>
+                            접속하자마자 대표하는 게임들 이미지를 전광판
+                            처럼 크게 보여줌으로써 호기심을 자극하도록 
+                            시도 했습니다.<br> 그리고 장르별 게임을 통해
+                            다양한 종류의 게임이 보이도록 시도했습니다. </p>
+                        <div class="buttons">
+                            <div class="button">
+                                <p class="guide"><a href="#">Design Guide</a></p>
+                            </div>
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="renewal-2">
+                    <div class="img" data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="./img/renewal2.png" alt="">
+                    </div>
+                    <div class="portfolio-detail" data-aos="fade-up-right" data-aos-duration="1000">
+                        <p class="title">#2 Leeum Art Museum</p>
+                        <p class="detail">참여인원 : 4명 <br> 
+                            소요기간 : 4주(2022.10.01 ~ 2022.10.28)<br>
+                            사용언어 : HTML5, CSS3, Javascript, Jquery
+                        </p>
+                        <p class="detail-text">기존의 리움 박물관 사이트를 더 많은 사람에게 
+                            알리고자 팀 프로젝트를 통해 반응형으로 홈페이지를 리뉴얼하게 됬습니다.
+                            이 팀 프로젝트에서 저는 시설안내와 전시 부분을 맡았고, 기존 사이트에서의
+                            개선해야 할 요소를 파악해서 사용자에게 조금 더 편리한 사이트로 만들기 위해서 노력했습니다.
+
+                        </p>
+                        <div class="buttons">
+                            <div class="button">
+                                <p class="guide"><a href="#">Design Guide</a></p>
+                            </div>
+                            <div class="button">
+                                <p class="guide"><a href="#">Proposal</a></p>
+                            </div>
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                    <div class="renewal-1">
+                        <div class="img" data-aos="fade-up-right" data-aos-duration="1000">
+                            <img src="./img/renewal3.PNG" alt="">
+                        </div>
+                        <div class="portfolio-detail" data-aos="fade-up-left" data-aos-duration="1000">
+                            <p class="title">#3 My Profile</p>
+                            <p class="detail">참여인원 : 1명 <br> 
+                                소요기간 : 4주<br>
+                                사용언어 : HTML5, CSS3, Javascript, Jquery
+                            </p>
+                            <p class="detail-text">
+                                학교 칠판이라는 컨셉을 잡고 진행한 프로필 포트폴리오입니다. 여러 동적인 요소를 이용하여 보는 사람이 지루하지 않게 노력했으며,
+                                마우스 효과를 통해서 기능에 대한 가시성을 향상시켰습니다.
+                            </p>
+                            <div class="buttons">
+                                <div class="button">
+                                    <p class="guide"><a href="#">Design Guide</a></p>
+                                </div>
+                                <div class="button">
+                                    <p class="guide"><a href="#">Visit Page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>    
+            <p class="filter" data-aos="fade-up" data-aos-duration="1000">JavaScript</p>
+            
+            <div class="portfolio">
+                <div class="renewal-1">
+                    <div class="img" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./img/renewal1.png" alt="">
+                    </div>
+                    <div class="portfolio-detail" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="title">#1 지하철 자판기</p>
+                        <p class="detail">참여인원 : 1명 <br> 
+                            소요기간 : 4주(2022.10.01 ~ 2022.10.28)<br>
+                            사용언어 : HTML5, CSS3, Javascript
+                        </p>
+                        <p class="detail-text">지하철에 있는 자판기 컨셉을 잡고 코딩했습니다.</p>
+                        <div class="buttons">       
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="renewal-2">
+                    <div class="img" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./img/renewal1.png" alt="">
+                    </div>
+                    <div class="portfolio-detail"data-aos="fade-right" data-aos-duration="1000">
+                        <p class="title">#2 유아를 위한 영어사전</p>
+                        <p class="detail">참여인원 : 1명 <br> 
+                            소요기간 : 4주(2022.10.01 ~ 2022.10.28)<br>
+                            사용언어 : HTML5, CSS3, Javascript
+                        </p>
+                        <p class="detail-text">평소 영어에 관심이 많아서 유아를 위한 영어사전을 코딩했습니다.</p>
+                        <div class="buttons">       
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+
+            <p class="filter" data-aos="fade-up" data-aos-duration="1000">React</p>
+            
+            <div class="portfolio">
+                <div class="renewal-1">
+                    <div class="img" data-aos="fade-up-right" data-aos-duration="1000">
+                        <img src="./img/react1.PNG" alt="">
+                    </div>
+                    <div class="portfolio-detail" data-aos="fade-up-left" data-aos-duration="1000">
+                        <p class="title">#1 TodoList</p>
+                        <p class="detail">참여인원 : 1명 <br> 
+                            소요기간 : 1주(2022.12.06 ~ 2022.12.13)<br>
+                            사용언어 : HTML5, CSS3, Javascript, React
+                        </p>
+                        <p class="detail-text">리액트를 활용하여 TodoList를 코딩했고, 그 기능에는 수정,삭제가 있습니다.</p>
+                        <div class="buttons">       
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="renewal-2">
+                    <div class="img"data-aos="fade-up-left" data-aos-duration="1000">
+                        <img src="./img/renewal1.png" alt="">
+                    </div>
+                    <div class="portfolio-detail" data-aos="fade-up-right" data-aos-duration="1000">
+                        <p class="title">#2 React Site</p>
+                        <p class="detail">참여인원 : 1명 <br> 
+                            소요기간 : ??<br>
+                            사용언어 : HTML5, CSS3, Javascript, React
+                        </p>
+                        <p class="detail-text">아직 미정입니다...</p>
+                        <div class="buttons">       
+                            <div class="button">
+                                <p class="guide"><a href="#">Visit Page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="contact" id="contact">
+            <p>Contact<img src="./img/chalk.png" alt="chalk"></p>
+                <span class="line"></span>
+            <div class="contact-box">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea col="30" row="10" placeholder="Message for Me"></textarea>
+            </div> 
+            <div class="icon-send">
+                <div class="icon">
+                    <div class="icon-img">
+                        <a href="#"><img src="./img/github.png"></a>
+                    </div>
+                    <div class="icon-img">
+                        <a href="#"><img src="./img/kakao-talk.png"></a>
+                    </div>
+                    <div class="icon-img">
+                        <a href="#"><img src="./img/email.png"></a>
+                    </div>
+                </div>
+                <div class="send">
+                    <p>Send</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="close">
+            <p>Thank you for watching :)</p>
+            <a href="#top"><img src="./img/eraser.png" alt="eraser"></a>
+        </div>
+
+    </div>
+</body>
+</html>

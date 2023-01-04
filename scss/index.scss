@@ -1,0 +1,761 @@
+@import './common.scss';
+@import './mixin.scss';
+@import './style.scss';
+body {
+    background-color: #d79006;
+    color:white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.container {
+    background-color: #033a3d;
+    width:94.61538461538462%;
+    @include responsive (pc-screens) {
+        padding:0 230px;
+    }
+    .mobile-menu {
+        width: 100%;
+        height: 40px;
+        top:0; right: 0px;
+
+        cursor: pointer;
+        span {
+            position: absolute;
+            top:5px;
+            right:10px;
+            width:32px;
+            height: 3px;
+            background-color: white;
+
+            &:nth-child(2) {
+                transform: translateY(10px);
+            }
+
+            &:last-of-type {
+                transform: translateY(20px);
+            }
+        }
+
+        @include responsive (tablet-screens) {
+            display: none;
+        }
+    }
+
+    .gnb {
+        height: 200px;
+        ul {
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            list-style: none;
+            
+            @include responsive (tablet-screens) {
+                flex-direction: row;
+                opacity: 1;
+                width: auto;
+            }
+                
+                li {
+                    text-align: center;
+                    font-size: 30px;
+
+                    @include responsive (tablet-screens) {
+                        font-size: 20px;
+                        width: auto;
+                        margin-top: auto;
+                        margin-right: 20px;
+                    }
+
+                    @include responsive (pc-screens) {
+                        font-size: 30px;
+                        width: auto;
+                        margin-top: auto;
+                        margin-right: 20px;
+                    }
+
+                    .gnb-detail {
+                        border: 1px solid transparent;
+                        background-color: #01181a;
+
+                        @include responsive (tablet-screens) {
+                            background-color: transparent;
+                            border: 0;
+                            opacity: 1;
+                        }
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+    
+                        &:hover {
+                            text-decoration:underline;
+                        }
+                    }
+                }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        @include responsive (pc-screens) {
+            margin-bottom: 40px;
+            font-size: 80px;
+        }
+    }
+
+    h2{
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 178px;
+
+        @include responsive (pc-screens) {
+            font-size: 100px;
+        }
+    }
+
+    .intro {
+        position: relative;
+        
+        p{
+            font-size: 40px;
+            text-align: left;
+            padding-bottom: 50px;
+
+            img {
+                position:absolute;
+                top:8px;
+                width:31px;
+                height:33px;
+                margin-left: 5px;
+            }
+        }
+
+        .line {
+            position:absolute;
+            top:50px;
+            margin-bottom: 50px;
+            background-color: white;
+            width:235px;
+            height: 3px;
+        }
+
+        .img-profile-flexbox {
+            display: flex;
+            flex-direction: column;
+
+            @include responsive (tablet-screens) {
+                flex-direction: row-reverse;
+            }
+
+            .img{
+                text-align: center;
+                padding-right: 140px;
+                height: 180px;
+
+                @include responsive (tablet-screens) {
+                    padding-right: 250px;
+                }
+
+                .circle {
+                    position: absolute;
+                    width: 140px;
+                    height: 140px;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    background-color: purple;
+                    margin-bottom: 50px;
+
+                    @include responsive (tablet-screens) {
+                        width: 180px;
+                        height: 180px;
+                    }
+
+                    @include responsive (pc-screens) {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+    
+            .profile {
+                margin-bottom: 90px;
+                p {
+                    text-align: center;
+                    font-size: 24px;
+                    @include responsive (tablet-screens) {
+                        text-align: left;
+                    }
+
+                    .strong {
+                        color:yellow;
+                        line-height: 50px;
+                        
+                        @include responsive (tablet-screens) {
+                            font-size: 26px;
+                            width: 70%;
+                        }
+                    }
+    
+                    br {
+                        @include responsive (tablet-screens) {
+                            display: none;
+                        }
+                    }
+                }
+    
+                .text {
+                    text-align: left;
+                    line-height: 30px;
+                    padding: 5px 0;
+                    font-size: 18px;
+                    
+                    @include responsive (tablet-screens) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .skill {
+        position: relative;
+        
+        p{
+            font-size: 40px;
+            text-align: left;
+            padding-bottom: 50px;
+
+            img {
+                position:absolute;
+                top:8px;
+                width:31px;
+                height:33px;
+                margin-left: 5px;
+            }
+        }
+
+        .line {
+            position:absolute;
+            top:50px;
+            margin-bottom: 50px;
+            background-color: white;
+            width:150px;
+            height: 3px;
+        }
+
+        .detail-circle {
+            display: flex;
+            flex-direction: column;
+            @include responsive (tablet-screens) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-left: 6%;
+
+            }
+
+            .detail {
+                position: relative;
+                height: 170px;
+                @include responsive (tablet-screens) {
+                    width: 17%;
+                    padding-left: 2%;
+                }
+
+                .wrapper {
+                    text-align: left;
+                    @include responsive (tablet-screens) {
+                        text-align: center;
+                    }
+                    .gauge {
+                        width: 55%;
+                        max-width: 90px;
+
+                        .gauge__info {
+                            animation: gauge-appear 2s forwards;
+                            opacity: 0;
+                            transform: translateY(0.3em);
+                        }
+
+                        .gauge__circle {
+                        animation: gauge-fill 2s reverse; 
+                        transform: rotate(-90deg);
+                        transform-origin: center;
+                        stroke: #00eaff;
+                        }
+                        
+                        .gauge__background {
+                        stroke: none;
+                        }
+                    }
+                }
+
+                    @keyframes gauge-fill {
+                        to { stroke-dasharray: 0 100; }
+                    }
+
+                    @keyframes gauge-appear {
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                .subject {
+                    @include subject_padding_font();
+                    padding-left: 24px;
+
+                    @include responsive (tablet-screens) {
+                        padding-left: 36.69306930693069%;
+                    }
+                }
+
+                .subject1 {
+                    @include subject_padding_font();
+                    padding-left: 3px;
+                    
+                    @include responsive (tablet-screens) {
+                        padding-left: 27.303370786516854%;
+                    }
+                }
+
+                .subject2 {
+                    @include subject_padding_font();
+                    padding-left: 0px;
+                    
+                    @include responsive (tablet-screens) {
+                        padding-left: 25.617977528089888%;
+                    }
+                }
+
+                .subject3 {
+                    @include subject_padding_font();
+                    padding-left: 14px;
+
+                    @include responsive (tablet-screens) {
+                        padding-left: 28.92134831460674%;
+                    }
+                }
+
+                .subject4 {
+                    @include subject_padding_font();
+                    padding-left: 18px;
+
+                    @include responsive (tablet-screens) {
+                        padding-left: 34.73033707865169%;
+                    }
+                }
+
+                .text {
+                    font-size: 14px;
+                    padding-left: 130px;
+                    margin-top: -170px;
+                    line-height: 20px;
+                    padding-right: 20px;
+                    
+                    @include responsive (tablet-screens) {
+                        margin-top: -150px;
+                    }
+                    
+                    @include responsive (tablet-screens) {
+                        display: none;
+                    }
+                }
+
+                .text1 {
+                    font-size: 14px;
+                    padding-left: 130px;
+                    margin-top: -160px;
+                    line-height: 20px;
+                    padding-right: 20px;
+                    
+                    @include responsive (tablet-screens) {
+                        margin-top: -150px;
+                    }
+                    
+                    @include responsive (tablet-screens) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .projects {
+        position: relative;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        p{
+            font-size: 40px;
+            text-align: left;
+            padding-bottom: 50px;
+
+            img {
+                position:absolute;
+                top:8px;
+                width:31px;
+                height:33px;
+                margin-left: 5px;
+            }
+        }
+
+        .line {
+            position:absolute;
+            top:50px;
+            margin-bottom: 50px;
+            background-color: white;
+            width:150px;
+            height: 3px;
+        }
+
+        .filter {
+            font-size: 24px;
+            position: relative;
+            width: 100%;
+
+        }
+
+        .portfolio {
+            
+            .renewal-1 {
+                width: 100%;
+                margin-bottom: 130px;
+
+                @include responsive (pc-screens) {
+                    display: flex;
+                    margin-bottom: 180px;
+                }
+                .img {
+                    width: 100%;
+                    border: 2px solid white;
+                    border-radius: 8px;
+                    @include responsive (pc-screens) {
+                        width: 55%;
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                }
+                .portfolio-detail {
+                    @include responsive (pc-screens) {
+                        width: 40%;
+                        margin-left: 60px;
+                    }
+                    .title {
+                        padding-top: 15px;
+                        font-size: 24px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                        
+                    }
+
+                    .detail {
+                        font-size: 18px;
+                        line-height: 1.8em;
+                        font-weight: 500;
+                        @include responsive (pc-screens) {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .detail-text {
+                        display: none;
+                        @include responsive (pc-screens) {
+                            display: block;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+                        .button {
+                            border: 5px solid white;
+                            border-radius: 10px;
+                            width: 144px;
+                            height: 56px;
+                            transition: background 0.5s;
+
+                            &:hover {
+                                background-color: white;
+                                transform: scale(1.02);
+                            }
+                            p{
+                                font-size: 18px;
+                                text-align: center;
+                                padding: 13px 0 0 0;
+
+                                a{
+                                    text-decoration: none;
+                                    color: white;
+                                    &:hover {
+                                        color: black;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .renewal-2 {
+                width: 100%;
+                margin-bottom: 130px;
+
+                @include responsive (pc-screens) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    margin-bottom: 180px;
+                }
+
+                .img {
+                    width: 100%;
+                    border: 2px solid white;
+                    border-radius: 8px;
+                    @include responsive (pc-screens) {
+                        width: 55%;
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                }
+                .portfolio-detail {
+                    @include responsive (pc-screens) {
+                        width: 40%;
+                        margin-right: 60px;
+                    }
+                    .title {
+                        padding-top: 15px;
+                        font-size: 24px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
+
+                    .detail {
+                        font-size: 18px;
+                        line-height: 1.8em;
+                        font-weight: 500;
+                        @include responsive (pc-screens) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .detail-text {
+                        display: none;
+                        @include responsive (pc-screens) {
+                            display: block;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+                        .button {
+                            border: 5px solid white;
+                            border-radius: 10px;
+                            width: 144px;
+                            height: 56px;
+                            transition: background 0.5s;
+
+                            &:hover {
+                                background-color: white;
+                                transform: scale(1.02);
+                            }
+                            p{
+                                font-size: 18px;
+                                text-align: center;
+                                padding: 13px 0 0 0;
+
+                                a{
+                                    text-decoration: none;
+                                    color: white;
+                                    &:hover {
+                                        color: black;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        position: relative;
+        p{
+            font-size: 40px;
+            text-align: left;
+            padding-bottom: 50px;
+
+            img {
+                position:absolute;
+                top:8px;
+                width:31px;
+                height:33px;
+                margin-left: 5px;
+            }
+        }
+
+        .line {
+            position:absolute;
+            top:50px;
+            margin-bottom: 50px;
+            background-color: white;
+            width:150px;
+            height: 3px;
+        }
+
+        .contact-box {
+            width: 100%;
+            height: 370px;
+            border: 10px solid white;
+            border-radius: 15px;
+            
+            input {
+                margin-top: 25px;
+                margin-left: 5%;
+                width: 90%;
+                background: none;
+                border: 0;
+                border-bottom: 5px solid white;
+                color:white;
+                font-size: 20px;
+                font-family: 'DalseoHealing';
+                
+                &::placeholder {
+                    color: #f5f5f5;
+                    font-family: 'DalseoHealing';
+                }
+
+                &:focus {
+                    outline:none;
+                    color: white;
+                }
+            }
+
+            textarea {
+                margin-top: 25px;
+                margin-left: 5%;
+                width:90%;
+                height:180px;
+                background-color: transparent;
+                border: 10px solid white;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;    
+                color: white;
+                font-family: 'DalseoHealing';
+
+                &::placeholder {
+                    font-family: 'DalseoHealing';
+                    color: #f5f5f5;
+                    padding-top: 5px;
+                    padding-left: 10px;
+                }
+
+                &:focus {
+                    outline:none;
+                    color: white;
+                }
+            }
+        }
+
+        .icon-send {
+            display: flex;
+            justify-content: space-between;
+            
+            .icon {
+                display: flex;
+                
+                .icon-img {
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    width: 50px;
+                    height: 50px;
+                    margin:10px 5px 0 5px;
+                    background-color: #f5f5f5;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                    a {
+                        img {
+                            margin-left: 9px;
+                            margin-top: 9px;
+                            width:30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .send {
+                width:99px;
+                height: 40px;
+                border: 5px solid white;
+                border-radius: 10px;
+                margin-top: 15px;
+                cursor: pointer;
+                transition: background 0.5s;
+                    &:hover {
+                        transform: scale(1.02);
+                        background-color: white;
+                        color:black;
+                    }
+                p{
+                    padding: 0;
+                    padding-top:5px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .close {
+        margin-top: 120px;
+        p{
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 60px;
+        }
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 50px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+            @include responsive (pc-screens) {
+                width: 150px;
+                height: 100px;
+            }
+        }
+    }
+}

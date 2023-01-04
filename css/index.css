@@ -1,0 +1,751 @@
+@import url("https://webfontworld.github.io/daegu/DalseoHealing.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DalseoHealing";
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1860px;
+  margin: 30px auto;
+}
+
+body {
+  background-color: #d79006;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.container {
+  background-color: #033a3d;
+  width: 94.6153846154%;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 230px;
+  }
+}
+.container .mobile-menu {
+  width: 100%;
+  height: 40px;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+}
+.container .mobile-menu span {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 32px;
+  height: 3px;
+  background-color: white;
+}
+.container .mobile-menu span:nth-child(2) {
+  transform: translateY(10px);
+}
+.container .mobile-menu span:last-of-type {
+  transform: translateY(20px);
+}
+@media screen and (min-width: 768px) {
+  .container .mobile-menu {
+    display: none;
+  }
+}
+.container .gnb {
+  height: 200px;
+}
+.container .gnb ul {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .container .gnb ul {
+    flex-direction: row;
+    opacity: 1;
+    width: auto;
+  }
+}
+.container .gnb ul li {
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .container .gnb ul li {
+    font-size: 20px;
+    width: auto;
+    margin-top: auto;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container .gnb ul li {
+    font-size: 30px;
+    width: auto;
+    margin-top: auto;
+    margin-right: 20px;
+  }
+}
+.container .gnb ul li .gnb-detail {
+  border: 1px solid transparent;
+  background-color: #01181a;
+}
+@media screen and (min-width: 768px) {
+  .container .gnb ul li .gnb-detail {
+    background-color: transparent;
+    border: 0;
+    opacity: 1;
+  }
+}
+.container .gnb ul li a {
+  color: white;
+  text-decoration: none;
+}
+.container .gnb ul li a:hover {
+  text-decoration: underline;
+}
+.container h1 {
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (min-width: 1440px) {
+  .container h1 {
+    margin-bottom: 40px;
+    font-size: 80px;
+  }
+}
+.container h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 178px;
+}
+@media screen and (min-width: 1440px) {
+  .container h2 {
+    font-size: 100px;
+  }
+}
+.container .intro {
+  position: relative;
+}
+.container .intro p {
+  font-size: 40px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.container .intro p img {
+  position: absolute;
+  top: 8px;
+  width: 31px;
+  height: 33px;
+  margin-left: 5px;
+}
+.container .intro .line {
+  position: absolute;
+  top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 235px;
+  height: 3px;
+}
+.container .intro .img-profile-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox {
+    flex-direction: row-reverse;
+  }
+}
+.container .intro .img-profile-flexbox .img {
+  text-align: center;
+  padding-right: 140px;
+  height: 180px;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .img {
+    padding-right: 250px;
+  }
+}
+.container .intro .img-profile-flexbox .img .circle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: purple;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .img .circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container .intro .img-profile-flexbox .img .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+.container .intro .img-profile-flexbox .profile {
+  margin-bottom: 90px;
+}
+.container .intro .img-profile-flexbox .profile p {
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .profile p {
+    text-align: left;
+  }
+}
+.container .intro .img-profile-flexbox .profile p .strong {
+  color: yellow;
+  line-height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .profile p .strong {
+    font-size: 26px;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .profile p br {
+    display: none;
+  }
+}
+.container .intro .img-profile-flexbox .profile .text {
+  text-align: left;
+  line-height: 30px;
+  padding: 5px 0;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .container .intro .img-profile-flexbox .profile .text {
+    width: 80%;
+  }
+}
+.container .skill {
+  position: relative;
+}
+.container .skill p {
+  font-size: 40px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.container .skill p img {
+  position: absolute;
+  top: 8px;
+  width: 31px;
+  height: 33px;
+  margin-left: 5px;
+}
+.container .skill .line {
+  position: absolute;
+  top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 150px;
+  height: 3px;
+}
+.container .skill .detail-circle {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 6%;
+  }
+}
+.container .skill .detail-circle .detail {
+  position: relative;
+  height: 170px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail {
+    width: 17%;
+    padding-left: 2%;
+  }
+}
+.container .skill .detail-circle .detail .wrapper {
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .wrapper {
+    text-align: center;
+  }
+}
+.container .skill .detail-circle .detail .wrapper .gauge {
+  width: 55%;
+  max-width: 90px;
+}
+.container .skill .detail-circle .detail .wrapper .gauge .gauge__info {
+  animation: gauge-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+.container .skill .detail-circle .detail .wrapper .gauge .gauge__circle {
+  animation: gauge-fill 2s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  stroke: #00eaff;
+}
+.container .skill .detail-circle .detail .wrapper .gauge .gauge__background {
+  stroke: none;
+}
+@keyframes gauge-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes gauge-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container .skill .detail-circle .detail .subject {
+  padding-top: 14px;
+  font-size: 22px;
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .subject {
+    padding-left: 36.6930693069%;
+  }
+}
+.container .skill .detail-circle .detail .subject1 {
+  padding-top: 14px;
+  font-size: 22px;
+  padding-left: 3px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .subject1 {
+    padding-left: 27.3033707865%;
+  }
+}
+.container .skill .detail-circle .detail .subject2 {
+  padding-top: 14px;
+  font-size: 22px;
+  padding-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .subject2 {
+    padding-left: 25.6179775281%;
+  }
+}
+.container .skill .detail-circle .detail .subject3 {
+  padding-top: 14px;
+  font-size: 22px;
+  padding-left: 14px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .subject3 {
+    padding-left: 28.9213483146%;
+  }
+}
+.container .skill .detail-circle .detail .subject4 {
+  padding-top: 14px;
+  font-size: 22px;
+  padding-left: 18px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .subject4 {
+    padding-left: 34.7303370787%;
+  }
+}
+.container .skill .detail-circle .detail .text {
+  font-size: 14px;
+  padding-left: 130px;
+  margin-top: -170px;
+  line-height: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .text {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .text {
+    display: none;
+  }
+}
+.container .skill .detail-circle .detail .text1 {
+  font-size: 14px;
+  padding-left: 130px;
+  margin-top: -160px;
+  line-height: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .text1 {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .skill .detail-circle .detail .text1 {
+    display: none;
+  }
+}
+.container .projects {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.container .projects p {
+  font-size: 40px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.container .projects p img {
+  position: absolute;
+  top: 8px;
+  width: 31px;
+  height: 33px;
+  margin-left: 5px;
+}
+.container .projects .line {
+  position: absolute;
+  top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 150px;
+  height: 3px;
+}
+.container .projects .filter {
+  font-size: 24px;
+  position: relative;
+  width: 100%;
+}
+.container .projects .portfolio .renewal-1 {
+  width: 100%;
+  margin-bottom: 130px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 {
+    display: flex;
+    margin-bottom: 180px;
+  }
+}
+.container .projects .portfolio .renewal-1 .img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 .img {
+    width: 55%;
+  }
+}
+.container .projects .portfolio .renewal-1 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 .portfolio-detail {
+    width: 40%;
+    margin-left: 60px;
+  }
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .title {
+  padding-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .detail {
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 .portfolio-detail .detail {
+    font-size: 16px;
+  }
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .detail-text {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 .portfolio-detail .detail-text {
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons .button {
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 144px;
+  height: 56px;
+  transition: background 0.5s;
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons .button:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons .button p {
+  font-size: 18px;
+  text-align: center;
+  padding: 13px 0 0 0;
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons .button p a {
+  text-decoration: none;
+  color: white;
+}
+.container .projects .portfolio .renewal-1 .portfolio-detail .buttons .button p a:hover {
+  color: black;
+}
+.container .projects .portfolio .renewal-2 {
+  width: 100%;
+  margin-bottom: 130px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 180px;
+  }
+}
+.container .projects .portfolio .renewal-2 .img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 .img {
+    width: 55%;
+  }
+}
+.container .projects .portfolio .renewal-2 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 .portfolio-detail {
+    width: 40%;
+    margin-right: 60px;
+  }
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .title {
+  padding-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .detail {
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 .portfolio-detail .detail {
+    font-size: 18px;
+  }
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .detail-text {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 .portfolio-detail .detail-text {
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons .button {
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 144px;
+  height: 56px;
+  transition: background 0.5s;
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons .button:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons .button p {
+  font-size: 18px;
+  text-align: center;
+  padding: 13px 0 0 0;
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons .button p a {
+  text-decoration: none;
+  color: white;
+}
+.container .projects .portfolio .renewal-2 .portfolio-detail .buttons .button p a:hover {
+  color: black;
+}
+.container .contact {
+  position: relative;
+}
+.container .contact p {
+  font-size: 40px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+.container .contact p img {
+  position: absolute;
+  top: 8px;
+  width: 31px;
+  height: 33px;
+  margin-left: 5px;
+}
+.container .contact .line {
+  position: absolute;
+  top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 150px;
+  height: 3px;
+}
+.container .contact .contact-box {
+  width: 100%;
+  height: 370px;
+  border: 10px solid white;
+  border-radius: 15px;
+}
+.container .contact .contact-box input {
+  margin-top: 25px;
+  margin-left: 5%;
+  width: 90%;
+  background: none;
+  border: 0;
+  border-bottom: 5px solid white;
+  color: white;
+  font-size: 20px;
+  font-family: "DalseoHealing";
+}
+.container .contact .contact-box input::placeholder {
+  color: #f5f5f5;
+  font-family: "DalseoHealing";
+}
+.container .contact .contact-box input:focus {
+  outline: none;
+  color: white;
+}
+.container .contact .contact-box textarea {
+  margin-top: 25px;
+  margin-left: 5%;
+  width: 90%;
+  height: 180px;
+  background-color: transparent;
+  border: 10px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: "DalseoHealing";
+}
+.container .contact .contact-box textarea::placeholder {
+  font-family: "DalseoHealing";
+  color: #f5f5f5;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.container .contact .contact-box textarea:focus {
+  outline: none;
+  color: white;
+}
+.container .contact .icon-send {
+  display: flex;
+  justify-content: space-between;
+}
+.container .contact .icon-send .icon {
+  display: flex;
+}
+.container .contact .icon-send .icon .icon-img {
+  border: 1px solid white;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px 0 5px;
+  background-color: #f5f5f5;
+}
+.container .contact .icon-send .icon .icon-img:hover {
+  transform: scale(1.05);
+}
+.container .contact .icon-send .icon .icon-img a img {
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 30px;
+  height: 30px;
+}
+.container .contact .icon-send .send {
+  width: 99px;
+  height: 40px;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.container .contact .icon-send .send:hover {
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+.container .contact .icon-send .send p {
+  padding: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+.container .close {
+  margin-top: 120px;
+}
+.container .close p {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+}
+.container .close img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 50px;
+}
+.container .close img:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 1440px) {
+  .container .close img {
+    width: 150px;
+    height: 100px;
+  }
+}

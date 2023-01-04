@@ -1,0 +1,25 @@
+@mixin responsive($break) {
+    @if $break == mobile-screens {
+        @media screen and (min-width:$break-mobile) {
+            @content;
+        }
+    }
+
+    @else if $break == tablet-screens {
+        @media screen and(min-width:$break-tablet) {
+            @content;
+        }
+    }
+
+    @else if $break == pc-screens {
+        @media screen and(min-width:$break-pc) {
+            @content;
+        }
+    }
+}
+
+@mixin subject_padding_font { //skill의 subject 클래스의 padding,font
+    padding-top: 14px;
+    font-size: 22px;
+}
+
