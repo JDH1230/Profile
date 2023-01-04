@@ -1,0 +1,682 @@
+@charset "utf-8";
+.container {
+    width:1920px;
+}
+
+/*-----header-----*/
+.header-sticky {
+    position: sticky;
+    top:0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+header {
+    width:100%;
+    height:80px;
+    background-color: black;
+}
+
+.left-menu {
+    position: absolute;
+    left:368px; top:33px;
+    width:30px; height: 32px;
+}
+
+.left-menu span:first-child,
+.left-menu span:nth-child(2),
+.left-menu span:last-child {
+    position :absolute;
+    width:26px;
+    height:2px;
+    background-color: white;
+}
+
+.left-menu span:nth-child(2) {
+    transform: translateY(8px);
+}
+
+.left-menu span:last-child {
+    transform: translateY(16px);
+}
+
+header .title {
+    position: absolute;
+    left: 416px;
+    color: white;
+    font: 30px "HY헤드라인M";
+    font-weight: bold;
+    margin:20px 0;  
+}
+
+header .title a {
+    text-decoration: none;
+    color:white;
+}
+
+.header-image > a img {
+    position:absolute;
+    right:369px;
+    width:33px;
+    padding-top:28px;
+}
+/*------Main------*/
+#main-gallery > img{
+    position:relative;
+    width: 100%;
+}
+
+#main-gallery .slide {
+    position: absolute;
+    top: 400px; left:50px;   
+}
+
+.slide .prev {
+    width:100px; height:100px;
+    font-size: 100px;
+    background-color: transparent;
+    border: transparent;
+    color:white;
+    margin-right: 1600px;
+}
+
+.slide .prev:hover {
+    transform: scale(1.1);
+}
+
+.slide .next {
+    width:100px; height:100px;
+    font-size: 100px;
+    background-color: transparent;
+    border: transparent;
+    color:white;
+}
+
+.slide .next:hover {
+    transform: scale(1.1);
+}
+
+/*---game-news---*/
+.game-flexbox {
+    width:1200px;
+    position: relative;
+    display: flex;
+    margin-left: 371px;
+    margin-top: 35px;
+}
+
+.game-flexbox img {
+    width:381px;
+    height: 262px;
+}
+
+.fifa {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.fifa a {
+    text-decoration: none;
+    color:black;
+
+}
+
+.fifa:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px gray;
+}
+
+.fifa p {
+    font: 39px "HY헤드라인M";
+    font-weight: 600;
+    margin-top: 31px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.fifa .subtitle {
+    font: 16px "HY헤드라인M";
+    font-weight: 600;
+} 
+
+.lostark a {
+    text-decoration: none;
+    color:black;
+}
+
+.lostark {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.lostark:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px gray;
+}
+
+.lostark p {
+    font: 39px "HY헤드라인M";
+    font-weight: 600;
+    margin-top: 31px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.lostark .subtitle {
+    font: 16px "HY헤드라인M";
+    font-weight: 600;
+}  
+
+.maple {
+    transition: ease 1s;
+}
+.maple:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px gray;
+}
+
+.maple a {
+    text-decoration: none;
+    color:black;
+}
+
+.maple p {
+    font: 39px "HY헤드라인M";
+    font-weight: 600;
+    margin-top: 31px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.maple .subtitle {
+    font: 16px "HY헤드라인M";
+    font-weight: 600;
+}  
+
+/*-----rpg-game-----*/
+.rpg-game p {
+    margin-top: 66px;
+    margin-left: 371px;
+    font: 24px "HY헤드라인M";
+    font-weight: 600;
+}
+
+.rpg-game-flexbox {
+    width:1200px;
+    position: relative;
+    margin-left: 371px;
+    margin-top: 35px;
+    
+}
+
+.rpg-game-flexbox > .info-lostark {
+    border:1px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px gray;
+    width:644px;
+    height:510px;
+    
+}
+
+.info-lostark img {
+    width:331px;
+    height:445px;
+    padding-top: 34px;
+    padding-left: 19px;
+}
+
+.info-lostark p {
+    position: absolute;
+    top:30px;
+    font-size: 24px;
+}
+
+.info-lostark .date {
+    position: absolute;
+    top:90px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info-lostark .detail {
+    position: absolute;
+    top:180px;
+    font-size: 18px;
+}
+
+.info-lostark .gamestart img {
+    position: absolute;
+    top:320px;
+    left:355px;
+    width:183px;
+    height:75px;
+}
+
+
+.rpg-game-flexbox > .info-maple {
+    position: absolute;
+    top:0; left:657px;
+    border:1px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px gray;
+    width:524px;
+    height:248px;
+}
+
+.info-maple img {
+    width:282px;
+    height:236px;
+    padding-top: 7px;
+    padding-left: 9px;
+}
+
+.info-maple p {
+    position: absolute;
+    top:-40px;
+    left: -60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-maple .maple-date {
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    font-size: 14px;
+}
+
+.info-maple .maple-detail {
+    position: absolute;
+    top: 60px;
+    left: -60px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.info-maple .maple-gamestart img {
+    position: absolute;
+    top:170px;
+    left:300px;
+    width:183px;
+    height:48px;
+}
+
+.rpg-game-flexbox > .info-blade {
+    position: absolute;
+    top:259px; left:657px;
+    border:1px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px gray;
+    width:524px;
+    height:248px;
+    
+}
+
+.info-blade img {
+    width:281px;
+    height:234px;
+    padding-top: 9px;
+    padding-left:11px;
+}
+
+.info-blade p {
+    position: absolute;
+    top:-40px;
+    left: -60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-blade .blade-date {
+    position: absolute;
+    top:10px;
+    left: -60px;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.info-blade .blade-detail {
+    position: absolute;
+    top:60px;
+    left: -60px;
+    font-size: 16px;   
+}
+
+.info-blade .blade-gamestart img {
+    position: absolute;
+    top:170px;
+    left:300px;
+    width:183px;
+    height:50px;
+}
+
+/*--sport-game--*/
+.sport-game p {
+    margin-top: 66px;
+    margin-left: 371px;
+    font: 24px "HY헤드라인M";
+    font-weight: 600;
+}
+
+.sport-game-flexbox {
+    position: relative;
+    display: flex;
+    width:1200px;
+    height: 503px;
+    margin-left: 371px;
+    margin-top: 35px;
+    overflow:hidden;
+}
+
+.info-fifa a {
+    color:black;
+}
+
+.info-fifa p {
+    position: absolute;
+    top:380px;
+    left:-360px;
+    font-size: 24px;
+}    
+
+.info-fifa {
+    margin-right: 20px;
+}
+
+.info-freestyle a {
+    color: black;
+    text-decoration: none;
+}
+
+.info-freestyle p {
+    position: absolute;
+    top:380px;
+    left:235px;
+    font-size: 24px;
+}
+
+.baseball {
+    position: absolute;
+    top:510px;
+}
+
+.baseball a {
+    color: black;
+    text-decoration: none;
+}
+
+.baseball p {
+    position: absolute;
+    width:600px;
+    top:390px;
+    left:-360px;
+    font-size: 24px;
+}
+
+#more {
+    position: absolute;
+    left:880px;
+    width: 200px;
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 8px;
+    background-color: #339ff5;
+    color: white;
+    cursor: pointer;
+}
+
+#more:hover {
+    background-color: #1e71c8;
+}
+
+/*----youtuber----*/
+.youtuber p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:250px;
+    margin-bottom:52px;
+}
+
+.youtuber img:first-child {
+    margin-bottom: 43px;
+}
+
+.youtuber img:nth-child(2) {
+    margin-bottom: 43px;
+}
+
+/*-----mobile-game-----*/
+.mobile-game p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 140px;
+}
+
+.mobile-game-flexbox {
+    position: relative;
+    display: flex;
+    width:1200px;
+    height: 503px;
+    margin-left: 331px;
+    margin-top: 65px;
+}
+.sevenknights {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.sevenknights a {
+    color:black;
+    text-decoration: none;
+}
+
+.sevenknights p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.sevenknights:hover {
+    transform: scale(1.1);
+}
+
+.island {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.island a {
+    color:black;
+    text-decoration: none;
+}
+
+.island p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.island:hover {
+    transform: scale(1.1);
+}
+
+.country {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.country a {
+    color:black;
+    text-decoration: none;
+}
+
+.country p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.country:hover {
+    transform: scale(1.1);
+}
+
+.blade-revolution {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.blade-revolution a {
+    color:black;
+    text-decoration: none;
+}
+
+.blade-revolution p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.blade-revolution:hover {
+    transform: scale(1.1);
+}
+
+.lineage2 {
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.lineage2  a {
+    color:black;
+    text-decoration: none;
+}
+
+.lineage2  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.lineage2:hover {
+    transform: scale(1.1);
+}
+
+.A3-stilalive {
+    transition: ease 1s;
+}
+.A3-stilalive a {
+    color:black;
+    text-decoration: none;
+}
+
+.A3-stilalive  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 22px;
+} 
+
+.A3-stilalive:hover {
+    transform: scale(1.1);
+}
+
+/*-----footer-----*/
+
+.footer {
+    width:100%;
+    height:257px;
+    
+}
+
+.menu-sns {
+    border-top: 1px solid #339ff5;
+    border-bottom: 1px solid #339ff5;
+}
+
+/* menu-flex-box */
+.menu-flex-box {
+    display: flex;
+    height: 50px;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left:371px; 
+}
+
+.footer-menu {
+    width: 46.36842105263158%;
+}
+
+.footer-menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.footer-menu a,
+.footer-menu #language {
+    font-size: 14px;
+    text-decoration: none;
+    color:black;
+    font-family: "HY헤드라인M";
+    font-weight: 600;
+}
+
+.footer-menu a:hover {
+    color:#339ff5;
+}
+
+.footer-menu #language {
+    border:transparent
+}
+
+/*--footer-logo-address--*/
+.footer-logo-address-flexbox {
+    display: flex;
+}
+
+.footer-logo {
+    margin-top: 30px;
+    margin-left:371px; 
+}
+
+.address p {
+    margin-top:20px;
+    margin-left: 40px;
+    line-height: 30px;
+    color:#339ff5;
+    font-weight: bolder;
+}
+
+.address p .contact {
+    font-size: 30px;
+    color:#1e71c8;
+}
+
+/*fixed-menu*/
+.fixed-menu {
+    position: fixed;
+    bottom:200px; right:180px;
+    width:85px; height:85px;
+    line-height: 85px;
+    text-align: center;
+    color:white;
+    border:1px solid transparent;
+    background-color: #339ff5;
+    border-radius: 50%;
+}
+
+.fixed-menu a {
+    text-decoration: none;
+    color:white;
+}

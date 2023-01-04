@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHeaven</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/gameheaven.css">
+    <script>
+        let num = 1;
+        function galleryPrev() {
+            num--;
+            if(num < 1) num = 3;
+            document.getElementById("photo").setAttribute("src" , "images/pic_" + num + ".png");
+        }
+        function galleryNext() {
+            num++;
+            if(num > 3) num = 1;
+            document.getElementById("photo").setAttribute("src" , "images/pic_" + num + ".png");
+        }
+        
+    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-sticky">
+            <header>
+                <div class="left-menu">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="title"><a href="gameheaven.html">Game Heaven</a></div>
+                <div class="header-image">
+                    <a href="#"><img src="./images/user-(1).png" alt="header-img"></a>
+                </div>        
+            </header>
+        </div> <!--header-sticky-->
+        <main>
+            <div id="main-gallery">
+                <img src="./images/pic_1.png" alt="main-image" id="photo">
+                <p class="slide">
+                <button onclick="galleryPrev()" class="prev">&lang;</button>
+                <button onclick="galleryNext()" class="next">&rang;</button>
+                </p>
+            </div>
+           
+            <div class="game-news">
+                <h1>gameheaven</h1>
+                <h2>게임 최근 소식</h2>
+                <div class="game-flexbox">
+                    <div class="fifa">
+                        <a href="https://fifaonline4.nexon.com/main/index" target="_blank">
+                        <img src="./images/fifa.png" alt="fifa">
+                        <p>피파온라인 4</p>
+                        <p class="subtitle">#스포츠 게임 # 새로운 선수 업데이트</p>
+                        </a>
+                    </div>
+                    <div class="lostark">
+                        <a href="https://lostark.game.onstove.com/Main" target="_blank">
+                        <img src="./images/lostark.png" alt="lostark">
+                        <p>로스트 아크</p>
+                        <p class="subtitle">#RPG 게임 # 새로운 보스 업데이트</p>
+                        </a>
+                    </div>
+                    <div class="maple">
+                        <a href="https://maplestory.nexon.com/Home/Main" target="_blank">
+                        <img src="./images/maple.png" alt="maple">
+                        <p>메이플스토리</p>
+                        <p class="subtitle">#RPG 게임 # 새로운 보스 업데이트</p>
+                        </a>
+                    </div>
+                </div><!--game-flexbox-->
+            </div><!--game-news-->
+            
+            <div class="rpg-game">
+                <p>RPG게임</p>
+                <div class="rpg-game-flexbox">
+                    <div class="info-lostark">
+                        <img src="./images/lostark-info.png" alt="lostark-info">
+                        <p>#로스트아크</p>
+                        <p class="date">출시일: 2019년 12월 4일</p>
+                        <p class="detail">#10개가 넘는 캐릭터<br>
+                                            #다양한 커스터마이징 가능<br>
+                                            #타격감이 좋은 RPG 
+                        </p>    
+                        <div class="gamestart"><a href="https://lostark.game.onstove.com/Main" target="_blank"><img src="./images/gamestart.png" alt="button"></a></div>
+                    </div>
+                    <div class="info-maple">
+                        <img src="./images/maple-info.png" alt="maple-info">
+                        <p>#메이플스토리</p>
+                        <p class="maple-date">출시일: 2003년 4월 29일</p>
+                        <p class="maple-detail">#성장형 RPG<br>
+                                                #다양한 보스컨텐츠
+                        </p>
+                        <div class="maple-gamestart"><a href="https://maplestory.nexon.com/Home/Main" target="_blank"><img src="./images/gamestart.png" alt="button"></a></div>
+                    </div>    
+                    <div class="info-blade">
+                        <img src="./images/blade.png" alt="blade">
+                        <p>#블레이드 앤 소울</p>
+                        <p class="blade-date">출시일: 2012년 6월 30일</p>
+                        <p class="blade-detail">#액션 RPG<br>
+                                                #타격감이 좋은 RPG
+                        </p>
+                        <div class="blade-gamestart"><a href="https://bns.plaync.com/" target="_blank"><img src="./images/gamestart.png" alt="button"></a></div>
+                    </div>
+                </div><!--rpg-game-flexbox-->
+            </div><!--rpg-game-->
+            
+            <div class="sport-game">    
+                <p>스포츠게임</p>
+                <div class="sport-game-flexbox">
+                    <div class="info-fifa">
+                        <a href="https://fifaonline4.nexon.com/main/index" target="_blank"><img src="./images/fifa-info.png" alt="fifa">
+                        <p class="fifa-detail">#피파 온라인4 #친구와 같이 하기 좋은 게임</p>
+                        </a>
+                    </div>
+                    <div class="info-freestyle">
+                        <a href="https://fs2.nexon.com/web/main.do" target="_blank"><img src="./images/freestyle2.png" alt="freestyle2">
+                        <p class="freestyle-detail">#프리스타일2 #친구와 같이 하기 좋은 게임</p>
+                        </a>
+                    </div>          
+                    <div class="baseball">
+                        <a href="https://ma9.netmarble.net/main.asp" target="_blank"><img src="./images/baseball.png" alt="baseball">
+                        <p class="baseball-detail">#마구마구 #친구와 같이 하기 좋은 게임</p>
+                        </a>
+                    </div>            
+                </div><!--sport-game-flexbox-->
+                <div id="more">모든 게임 보기</div>
+            </div><!--sport-game-->
+            
+            <div class="youtuber">
+                <p>관련 유튜브 채널</p>
+                <a href="https://www.youtube.com/channel/UC46X_E7jxvJ1O_3gnaeCxeg" target="_blank"><img src="./images/lostark-youtuber.png" alt="lostark"></a>
+                <a href="https://www.youtube.com/user/bjpange" target="_blank"><img src="./images/maplestory-youtuber.png" alt="maple"></a>
+                <a href="https://www.youtube.com/channel/UCxRlvng0zVoyEBhutAuXfzQ" target="_blank"><img src="./images/fifaonline-youtuber.png" alt="fifa"></a>
+            </div>
+           
+            <div class="mobile-game">
+                <p>모바일 게임</p>
+                <div class="mobile-game-flexbox">
+                    <div class="sevenknights">
+                        <a href="https://skr.netmarble.com/" target="_blank">
+                        <img src="./images/모바일게임1.png" alt="mobile">
+                        <p>세븐나이츠 레볼루션</p>
+                        </a>
+                    </div>
+                    <div class="island">
+                        <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank">
+                        <img src="./images/모바일게임2.png" alt="mobile">  
+                        <p>쿵야 아일랜드</p>  
+                        </a>
+                    </div>
+
+                    
+                    <div class="country">
+                        <a href="https://2worlds.netmarble.com/ko/" target="_blank">
+                        <img src="./images/모바일게임3.png" alt="mobile">  
+                        <p>제2의 나라</p>  
+                        </a>
+                    </div>
+                    <div class="blade-revolution">
+                        <a href="https://bns.netmarble.com/" target="_blank">
+                        <img src="./images/모바일게임4.png" alt="mobile">  
+                        <p>블레이드 앤 소울</p>  
+                        </a>
+                    </div>
+                    <div class="lineage2">
+                        <a href="http://l2.netmarble.net/" target="_blank">
+                        <img src="./images/모바일게임5.png" alt="mobile">  
+                        <p>리니지2 레볼루션</p>  
+                        </a>
+                    </div>
+                    <div class="A3-stilalive">
+                        <a href="https://a3.netmarble.com/update/2209?target=main" target="_blank">
+                        <img src="./images/모바일게임6.png" alt="mobile">  
+                        <p>A3:스틸얼라이브</p>  
+                        </a>
+                    </div>
+                </div><!--mobile-game-flexbox-->
+            </div><!--mobile-game-->
+        </main>
+        <footer>
+            <div class="menu-sns">
+                <div class="menu-flex-box">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">청소년 보호정책</a></li>
+                            <li><a href="#">게임IP이용가이드</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">전체서비스</a></li>
+                            <li>
+                                <form action="#" method="post">
+                                    <select name="language" id="language">
+                                        <option value="language">Language</option>
+                                        <option value="Korean">Korean</option>
+                                        <option value="Japanese">Japanese</option>
+                                        <option value="Chinese">Chinese</option>
+                                    </select>
+                                </form>
+                            </li>
+                        </ul>
+                    </div> <!--footer-menu-->
+                </div><!--menu-flex-box-->
+            </div><!--menu-sns-->
+            
+            <div class="footer-logo-address">
+                <div class="footer-logo-address-flexbox">
+                    <div class="footer-logo">
+                        <img src="./images/footer-logo.PNG" alt="footer-logo">
+                    </div>
+                    <div class="address">
+                        <p>[주] 게임헤븐 코리아 대표이사 전대현 
+                            경기도 성남시 분당구 판교로 256번길 7 <br>
+                            전화 : 1588-7701 팩스 : 0502-258-8322 사업자등록번호 : 220-87-17483호 <br>
+                            <span class="contact">Email : contact-us@heaven.co.kr</span><br>
+                            ⓒGame Heaven Korea Corporation All Rights Reserved.
+                        </p>
+                    </div>
+                </div><!--footer-logo-address-flexbox-->
+            </div><!--footer-logo-address-->
+            
+            <div class="fixed-menu">
+                <a href="#">
+                    <p>TOP</p>
+                </a>     
+            </div><!--fixed-menu-->
+        </footer>
+    </div><!--container-->
+</body>
+</html>
