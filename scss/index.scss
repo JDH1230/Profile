@@ -228,7 +228,9 @@ h1 {
 
     .skill {
         position: relative;
-        
+        @include responsive (pc-screens) {
+            margin-top: 100px;
+        }
         p{
             font-size: 40px;
             text-align: left;
