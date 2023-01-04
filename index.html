@@ -14,6 +14,8 @@
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="./js/typing.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/form-submission-handler.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <script>
@@ -52,7 +54,7 @@
                         게임을 상위 1% 에 도달할 때 까지 연구하면서 
                         잠도 안자고 연습을 해서 결국 1%에 달성했었습니다. 어릴때의 경험을 기반으로 삼아서
                         현재 자바스크립트와 리액트를 배운 내용 포함해서 끊임없이 복습하면서 연구하고 있습니다. 
-                        앞으로도 수없이 변하는 정보에 맞서서 카멜레온 처럼 적응하는 웹 개발자가 되겠습니다.
+                        앞으로도 수없이 변하는 정보에 맞서서 미친듯이 파고드는 웹 개발자가 되겠습니다.
                                 
                     </p>
                 </div>
@@ -253,7 +255,7 @@
                                 <p class="guide"><a href="#">Design Guide</a></p>
                             </div>
                             <div class="button">
-                                <p class="guide"><a href="./works/pages/gameheaven/gameheaven.html">Visit Page</a></p>
+                                <p class="guide"><a href="./works/pages/gameheaven/gameheaven.html" target="_blank">Visit Page</a></p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +263,7 @@
 
                 <div class="renewal-2">
                     <div class="img" data-aos="fade-up-left" data-aos-duration="1000">
-                        <img src="./img/renewal2.png" alt="">
+                        <img src="./img/renewal2.png" alt="">                    
                     </div>
                     <div class="portfolio-detail" data-aos="fade-up-right" data-aos-duration="1000">
                         <p class="title">#2 Leeum Art Museum</p>
@@ -373,7 +375,11 @@
                         <p class="detail-text">리액트를 활용하여 TodoList를 코딩했고, 그 기능에는 수정,삭제가 있습니다.</p>
                         <div class="buttons">       
                             <div class="button">
-                                <p class="guide"><a href="#">Visit Page</a></p>
+                                <p class="guide"><a href="#">Design Guide</a></p>
+                            </div>
+
+                            <div class="button">
+                                <p class="guide"><a href="http://boydh0123.dothome.co.kr/todolist/index.html" target="_blank">Visit Page</a></p>
                             </div>
                         </div>
                     </div>
@@ -392,6 +398,10 @@
                         <p class="detail-text">아직 미정입니다....</p>
                         <div class="buttons">       
                             <div class="button">
+                                <p class="guide"><a href="#">Design Guide</a></p>
+                            </div>
+
+                            <div class="button">
                                 <p class="guide"><a href="#">Visit Page</a></p>
                             </div>
                         </div>
@@ -402,10 +412,28 @@
         <div class="contact" id="contact">
             <p>Contact<img src="./img/chalk.png" alt="chalk"></p>
                 <span class="line"></span>
-            <div class="contact-box">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <textarea col="30" row="10" placeholder="Message for Me"></textarea>
+            <div class="contact-box">   
+                <form method="post" action="https://script.google.com/macros/s/AKfycbzkz0KnU8-cW99xPY647WYZPN8lWizcomLi9FwQ4bq9sXI8Nm_GekfughWigzaXWJnbFw/exec">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="usr" class="blind"></label>
+                            <input type="text" class="form-control" id="usr" name="username" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email" class="blind"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment" class="blind"></label>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Comment for Me"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+
+                <script data-cfasync="false" type="text/javascript"
+                src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
             </div> 
             <div class="icon-send">
                 <div class="icon">
@@ -418,9 +446,6 @@
                     <div class="icon-img">
                         <a href="#"><img src="./img/email.png"></a>
                     </div>
-                </div>
-                <div class="send">
-                    <p>Send</p>
                 </div>
             </div>   
         </div>
