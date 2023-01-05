@@ -7,7 +7,7 @@ $(function() {
         });
     
         typewriter.typeString(`DaeHyun's Portfolio!`)
-            .pauseFor(25000)
+            .pauseFor(40000)
             .start();
     });
 })
