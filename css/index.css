@@ -31,6 +31,7 @@ h1 {
 .container {
   background-color: #033a3d;
   width: 94.6153846154%;
+  overflow: hidden;
 }
 @media screen and (min-width: 1440px) {
   .container {
@@ -439,9 +440,15 @@ h1 {
   height: 3px;
 }
 .container .projects .filter {
-  font-size: 24px;
+  text-align: center;
+  font-size: 28px;
   position: relative;
   width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .filter {
+    text-align: left;
+  }
 }
 .container .projects .portfolio .renewal-1 {
   width: 100%;

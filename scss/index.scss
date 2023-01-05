@@ -10,18 +10,22 @@ h1 {
     font-size: 40px;
 }
 
+
 .container {
     background-color: #033a3d;
     width:94.61538461538462%;
+    overflow: hidden;
+    
     @include responsive (pc-screens) {
         padding:0 230px;
     }
+
     .mobile-menu {
         width: 100%;
         height: 40px;
         top:0; right: 0px;
-
         cursor: pointer;
+        
         span {
             position: absolute;
             top:5px;
@@ -231,6 +235,7 @@ h1 {
         @include responsive (pc-screens) {
             margin-top: 100px;
         }
+
         p{
             font-size: 40px;
             text-align: left;
@@ -257,6 +262,7 @@ h1 {
         .detail-circle {
             display: flex;
             flex-direction: column;
+            
             @include responsive (tablet-screens) {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -278,6 +284,7 @@ h1 {
                     @include responsive (tablet-screens) {
                         text-align: center;
                     }
+
                     .gauge {
                         width: 55%;
                         max-width: 90px;
@@ -420,10 +427,14 @@ h1 {
         }
 
         .filter {
-            font-size: 24px;
+            text-align: center;
+            font-size: 28px;
             position: relative;
             width: 100%;
 
+            @include responsive (pc-screens){
+                text-align: left;
+            }
         }
 
         .portfolio {
@@ -456,6 +467,7 @@ h1 {
                         width: 40%;
                         margin-left: 60px;
                     }
+
                     .title {
                         padding-top: 15px;
                         font-size: 24px;
@@ -697,6 +709,7 @@ h1 {
                 color: white;
                 border-color: white;
                 transition: background 0.5s;
+                
                 &:hover {
                     background-color: white;
                     color: black;
@@ -721,6 +734,7 @@ h1 {
                     &:hover {
                         transform: scale(1.05);
                     }
+
                     a {
                         img {
                             margin-left: 9px;
