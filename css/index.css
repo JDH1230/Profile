@@ -281,6 +281,7 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
     margin-left: 6%;
+    margin-top: 40px;
   }
 }
 .container .skill .detail-circle .detail {
