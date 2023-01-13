@@ -68,19 +68,22 @@ h1 {
   height: 200px;
 }
 .container .gnb ul {
-  opacity: 0;
   position: absolute;
   right: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
+  opacity: 0;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
   .container .gnb ul {
+    position: fixed;
+    width: auto;
+    right: 50px;
     flex-direction: row;
     opacity: 1;
-    width: auto;
+    z-index: 999;
   }
 }
 .container .gnb ul li {
@@ -91,7 +94,8 @@ h1 {
   .container .gnb ul li {
     font-size: 20px;
     width: auto;
-    margin-top: auto;
+    margin-left: 20px;
+    margin-top: 10px;
     margin-right: 20px;
   }
 }
@@ -99,7 +103,7 @@ h1 {
   .container .gnb ul li {
     font-size: 30px;
     width: auto;
-    margin-top: auto;
+    margin-top: 10px;
     margin-right: 20px;
   }
 }
@@ -485,9 +489,14 @@ h1 {
 }
 .container .projects .portfolio .renewal-1 .portfolio-detail .title {
   padding-top: 15px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-1 .portfolio-detail .title {
+    font-size: 30px;
+  }
 }
 .container .projects .portfolio .renewal-1 .portfolio-detail .detail {
   font-size: 18px;
@@ -496,7 +505,7 @@ h1 {
 }
 @media screen and (min-width: 1440px) {
   .container .projects .portfolio .renewal-1 .portfolio-detail .detail {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 .container .projects .portfolio .renewal-1 .portfolio-detail .detail-text {
@@ -571,9 +580,14 @@ h1 {
 }
 .container .projects .portfolio .renewal-2 .portfolio-detail .title {
   padding-top: 15px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .container .projects .portfolio .renewal-2 .portfolio-detail .title {
+    font-size: 30px;
+  }
 }
 .container .projects .portfolio .renewal-2 .portfolio-detail .detail {
   font-size: 18px;
@@ -582,7 +596,7 @@ h1 {
 }
 @media screen and (min-width: 1440px) {
   .container .projects .portfolio .renewal-2 .portfolio-detail .detail {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 .container .projects .portfolio .renewal-2 .portfolio-detail .detail-text {
@@ -746,9 +760,9 @@ h1 {
   margin-top: 60px;
 }
 .container .close img {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  right: 0;
+  right: 10px;
   width: 80px;
   height: 50px;
 }
@@ -757,7 +771,8 @@ h1 {
 }
 @media screen and (min-width: 1440px) {
   .container .close img {
-    width: 150px;
+    right: 38px;
+    width: 120px;
     height: 100px;
   }
 }

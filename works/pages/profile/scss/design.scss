@@ -1,0 +1,12 @@
+@import '../../../../../scss/style.scss';
+@import '../../../../../scss/mixin.scss';
+@import '../../../../../scss/common.scss';
+
+.container {
+    max-width: 1200px;
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+}

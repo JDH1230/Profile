@@ -13,7 +13,21 @@
     h2 {
         font-size: 40px;
     }
+    .icon-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 1px 1px;
 
+        &:hover {
+            transform: scale(1.02);
+        }
+        img {
+            width: 50px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
     .exit {
         span {
             position: absolute;

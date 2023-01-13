@@ -30,6 +30,20 @@ ul, ol, li {
 .container h2 {
   font-size: 40px;
 }
+.container .icon-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px;
+}
+.container .icon-img:hover {
+  transform: scale(1.02);
+}
+.container .icon-img img {
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 .container .exit span {
   position: absolute;
   top: 0;
