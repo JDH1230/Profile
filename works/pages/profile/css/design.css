@@ -1,0 +1,134 @@
+@import url("https://webfontworld.github.io/daegu/DalseoHealing.css");
+* li {
+  list-style: none;
+}
+
+.container {
+  margin-left: 350px;
+  max-width: 1200px;
+}
+.container .icon-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px;
+}
+.container .icon-img:hover {
+  transform: scale(1.02);
+}
+.container .icon-img img {
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.container .exit span {
+  position: absolute;
+  top: 30px;
+  right: 400px;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  cursor: pointer;
+}
+.container .exit span:first-child {
+  transform: rotate(45deg);
+}
+.container .exit span:last-child {
+  transform: rotate(135deg);
+}
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.container .img {
+  margin-left: 120px;
+  width: 70%;
+}
+.container .img img {
+  width: 100%;
+}
+.container .flexbox {
+  width: 1200px;
+  display: flex;
+  margin-left: 90px;
+}
+.container .flexbox .title {
+  font-size: 35px;
+  margin-right: 100px;
+}
+.container .flexbox .concept {
+  margin-top: 30px;
+}
+.container .flexbox .concept ul li {
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.container .flexbox .font {
+  margin-top: 30px;
+  margin-left: 90px;
+  font-family: "DalseoHealing";
+}
+.container .flexbox .font .font-name {
+  font-size: 20px;
+}
+.container .flexbox .font .detail1 {
+  font-weight: 400;
+}
+.container .flexbox .font .detail2 {
+  font-weight: 600;
+}
+.container .flexbox .color {
+  display: flex;
+  margin: 40px 0 60px 80px;
+}
+.container .flexbox .color .color-detail {
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.container .flexbox .color .board {
+  background-color: #033a3d;
+  color: white;
+}
+.container .flexbox .color .board p {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.container .flexbox .color .black {
+  background-color: #000;
+  color: white;
+}
+.container .flexbox .color .black p {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.container .flexbox .color .white {
+  background-color: #fff;
+  color: black;
+}
+.container .flexbox .color .white p {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.container .flexbox .grid-img {
+  margin-top: 50px;
+}
+.container .flexbox .grid {
+  display: flex;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+.container .flexbox .grid .detail {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}

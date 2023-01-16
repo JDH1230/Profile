@@ -1,12 +1,161 @@
-@import '../../../../../scss/style.scss';
-@import '../../../../../scss/mixin.scss';
-@import '../../../../../scss/common.scss';
-
+@import url('https://webfontworld.github.io/daegu/DalseoHealing.css');
+* {
+    li {
+        list-style: none;
+    }
+}
 .container {
+    margin-left: 350px;
     max-width: 1200px;
+
+    .icon-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 1px 1px;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 50px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .exit {
+        span {
+            position: absolute;
+            top: 30px;
+            right: 400px;
+            width:30px;
+            height: 3px;
+            background-color:black;
+            cursor: pointer;
+
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:last-child {
+                transform: rotate(135deg);
+            }
+        }
+    }
+
     h1 {
         text-align: center;
         font-size: 50px;
-        margin-bottom: 40px;
+    }
+
+    .img {
+        margin-left: 120px;
+        width: 70%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .flexbox {
+        width: 1200px;
+        display: flex;
+        margin-left: 90px;
+        .title {
+            font-size: 35px;
+            margin-right: 100px;
+        }
+
+        .concept {
+            margin-top: 30px;
+            ul {
+                li {
+                    line-height: 1.5em;
+                    font-weight: 400;
+                }
+            }
+        }
+        .font {
+            margin-top: 30px;
+            margin-left: 90px;
+            font-family: 'DalseoHealing';
+            .font-name{
+                font-size: 20px;
+            }
+    
+            .detail1 {
+                font-weight: 400;
+            }
+    
+            .detail2 {
+                font-weight: 600;
+            }
+        }
+
+        .color {
+            display: flex;
+            margin : 40px 0 60px 80px;
+            .color-detail {
+                width: 120px;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+
+            .board {
+                background-color: #033a3d;
+                color: white;
+                
+                p {
+                    text-align: center;
+                    padding-top: 5px;
+                    font-weight: 600;
+                }
+            }
+
+            .black {
+                background-color: #000;
+                color: white;
+
+                p {
+                    text-align: center;
+                    padding-top: 5px;
+                    font-weight: 600;
+                }
+            }
+
+            .white {
+                background-color: #fff;
+                color: black;
+
+                p {
+                    text-align: center;
+                    padding-top: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .grid-img {
+            margin-top: 50px;
+        }
+
+        .grid {
+            display: flex;
+            margin-top: 70px;
+            margin-left: 10px;
+
+            .detail {
+                width: 50%;
+                border: 1px solid black;
+                border-radius: 5px;
+                height: 80px;
+                text-align: center;
+                padding-top: 20px;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
     }
 }
