@@ -1,13 +1,18 @@
+@import '../../../../scss/style.scss';
+@import '../../../../scss/mixin.scss';
+@import '../../../../scss/common.scss';
 @import url('https://webfontworld.github.io/daegu/DalseoHealing.css');
-* {
-    li {
-        list-style: none;
-    }
-}
 .container {
-    margin-left: 350px;
     max-width: 1200px;
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
 
+    h2 {
+        font-size: 40px;
+    }
     .icon-img {
         width: 60px;
         height: 60px;
@@ -17,19 +22,17 @@
         &:hover {
             transform: scale(1.02);
         }
-
         img {
             width: 50px;
             margin-left: 5px;
             margin-top: 5px;
         }
     }
-
     .exit {
         span {
             position: absolute;
-            top: 30px;
-            right: 400px;
+            top: 0;
+            right: 15px;
             width:30px;
             height: 3px;
             background-color:black;
@@ -44,117 +47,136 @@
             }
         }
     }
+    .img{
+        width:100%;
+        @include responsive (pc-screens){
+            width: 60%;
+            margin-left: 250px;
+        }
 
-    h1 {
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .img {
-        margin-left: 120px;
-        width: 70%;
-        img {
+        img{
             width: 100%;
         }
     }
 
-    .flexbox {
-        width: 1200px;
+    .logo {
         display: flex;
-        margin-left: 90px;
-        .title {
-            font-size: 35px;
-            margin-right: 100px;
+        margin:60px auto;
+        
+        h2 {
+            margin-right: 350px;
         }
+    }
 
-        .concept {
-            margin-top: 30px;
-            ul {
-                li {
-                    line-height: 1.5em;
-                    font-weight: 400;
-                }
-            }
-        }
-        .font {
-            margin-top: 30px;
-            margin-left: 90px;
-            font-family: 'DalseoHealing';
-            .font-name{
+    .concept {
+        display: flex;
+        margin:100px auto;
+        
+        ul{
+            li{
                 font-size: 20px;
-            }
-    
-            .detail1 {
-                font-weight: 400;
-            }
-    
-            .detail2 {
-                font-weight: 600;
+                margin-left: 300px;
             }
         }
+    }
 
-        .color {
+    .color {
+        margin:100px auto;
+        @include responsive (pc-screens) {
             display: flex;
-            margin : 40px 0 60px 80px;
-            .color-detail {
+        }
+        .flexbox{
+            display: flex;  
+            justify-content: space-between; 
+            margin-left: 250px;
+            
+            .square{
                 width: 120px;
-                border: 1px solid black;
-                border-radius: 10px;
-                margin-right: 10px;
-            }
-
-            .board {
-                background-color: #033a3d;
-                color: white;
-                
-                p {
-                    text-align: center;
-                    padding-top: 5px;
-                    font-weight: 600;
-                }
+                height: 120px;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px 2px;
+                margin-right: 20px;
             }
 
             .black {
-                background-color: #000;
+                background-color: black;
                 color: white;
-
-                p {
-                    text-align: center;
-                    padding-top: 5px;
-                    font-weight: 600;
-                }
-            }
-
-            .white {
-                background-color: #fff;
-                color: black;
-
-                p {
-                    text-align: center;
-                    padding-top: 5px;
-                    font-weight: 600;
-                }
-            }
-        }
-
-        .grid-img {
-            margin-top: 50px;
-        }
-
-        .grid {
-            display: flex;
-            margin-top: 70px;
-            margin-left: 10px;
-
-            .detail {
-                width: 50%;
-                border: 1px solid black;
-                border-radius: 5px;
-                height: 80px;
+                font-size: 24px;
                 text-align: center;
-                padding-top: 20px;
-                margin-left: 10px;
-                font-weight: 600;
+                padding-top: 45px;
+            }
+    
+            .white {
+                background-color: white;
+                color: black;
+                font-size: 24px;
+                text-align: center;
+                padding-top: 45px;
+            }
+    
+            .green {
+                background-color: #033a3d;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                padding-top: 45px;
+            }
+        }
+    }
+
+    .font {
+        margin-bottom: 60px;
+        display: flex;
+        .font-detail{
+            margin-left: 340px;
+            p {
+                font-family: "DalseoHealing";
+                font-weight: bold;
+            }
+    
+            .font-first {
+                font-size: 35px;
+            }
+    
+            .font-second {
+                font-size: 30px;
+            }
+    
+            .font-third {
+                font-size: 24px;
+            }
+    
+            .font-last {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .grid-system {
+        .grid-flex {
+            @include responsive (pc-screens) {
+                display: flex;
+            }
+        }
+        .details {
+            display: flex;
+            @include responsive (pc-screens) {
+                margin-top: 150px;
+                margin-left: 120px;
+            }
+
+            .detail-box {
+                width: 100%;
+                height: 120px;
+                border: 1px solid black;
+                text-align: center;
+                padding-top: 40px;
+                font-size: 20px;
+
+                @include responsive (pc-screens) {
+                    padding-top: 30px;
+                }
             }
         }
     }

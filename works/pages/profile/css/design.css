@@ -1,11 +1,35 @@
 @import url("https://webfontworld.github.io/daegu/DalseoHealing.css");
-* li {
+@import url("https://webfontworld.github.io/daegu/DalseoHealing.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DalseoHealing";
+}
+
+ul, ol, li {
   list-style: none;
 }
 
 .container {
-  margin-left: 350px;
+  position: relative;
+  max-width: 1860px;
+  margin: 30px auto;
+}
+
+.container {
   max-width: 1200px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.container h2 {
+  font-size: 40px;
 }
 .container .icon-img {
   width: 60px;
@@ -23,8 +47,8 @@
 }
 .container .exit span {
   position: absolute;
-  top: 30px;
-  right: 400px;
+  top: 0;
+  right: 15px;
   width: 30px;
   height: 3px;
   background-color: black;
@@ -36,99 +60,122 @@
 .container .exit span:last-child {
   transform: rotate(135deg);
 }
-.container h1 {
-  text-align: center;
-  font-size: 50px;
-}
 .container .img {
-  margin-left: 120px;
-  width: 70%;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .container .img {
+    width: 60%;
+    margin-left: 250px;
+  }
 }
 .container .img img {
   width: 100%;
 }
-.container .flexbox {
-  width: 1200px;
+.container .logo {
   display: flex;
-  margin-left: 90px;
+  margin: 60px auto;
 }
-.container .flexbox .title {
-  font-size: 35px;
-  margin-right: 100px;
+.container .logo h2 {
+  margin-right: 350px;
 }
-.container .flexbox .concept {
-  margin-top: 30px;
+.container .concept {
+  display: flex;
+  margin: 100px auto;
 }
-.container .flexbox .concept ul li {
-  line-height: 1.5em;
-  font-weight: 400;
-}
-.container .flexbox .font {
-  margin-top: 30px;
-  margin-left: 90px;
-  font-family: "DalseoHealing";
-}
-.container .flexbox .font .font-name {
+.container .concept ul li {
   font-size: 20px;
+  margin-left: 300px;
 }
-.container .flexbox .font .detail1 {
-  font-weight: 400;
+.container .color {
+  margin: 100px auto;
 }
-.container .flexbox .font .detail2 {
-  font-weight: 600;
+@media screen and (min-width: 1440px) {
+  .container .color {
+    display: flex;
+  }
 }
-.container .flexbox .color {
+.container .color .flexbox {
   display: flex;
-  margin: 40px 0 60px 80px;
+  justify-content: space-between;
+  margin-left: 250px;
 }
-.container .flexbox .color .color-detail {
+.container .color .flexbox .square {
   width: 120px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-right: 10px;
+  height: 120px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px;
+  margin-right: 20px;
 }
-.container .flexbox .color .board {
+.container .color .flexbox .black {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 45px;
+}
+.container .color .flexbox .white {
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 45px;
+}
+.container .color .flexbox .green {
   background-color: #033a3d;
   color: white;
-}
-.container .flexbox .color .board p {
+  font-size: 24px;
   text-align: center;
-  padding-top: 5px;
-  font-weight: 600;
+  padding-top: 45px;
 }
-.container .flexbox .color .black {
-  background-color: #000;
-  color: white;
-}
-.container .flexbox .color .black p {
-  text-align: center;
-  padding-top: 5px;
-  font-weight: 600;
-}
-.container .flexbox .color .white {
-  background-color: #fff;
-  color: black;
-}
-.container .flexbox .color .white p {
-  text-align: center;
-  padding-top: 5px;
-  font-weight: 600;
-}
-.container .flexbox .grid-img {
-  margin-top: 50px;
-}
-.container .flexbox .grid {
+.container .font {
+  margin-bottom: 60px;
   display: flex;
-  margin-top: 70px;
-  margin-left: 10px;
 }
-.container .flexbox .grid .detail {
-  width: 50%;
+.container .font .font-detail {
+  margin-left: 340px;
+}
+.container .font .font-detail p {
+  font-family: "DalseoHealing";
+  font-weight: bold;
+}
+.container .font .font-detail .font-first {
+  font-size: 35px;
+}
+.container .font .font-detail .font-second {
+  font-size: 30px;
+}
+.container .font .font-detail .font-third {
+  font-size: 24px;
+}
+.container .font .font-detail .font-last {
+  font-size: 18px;
+}
+@media screen and (min-width: 1440px) {
+  .container .grid-system .grid-flex {
+    display: flex;
+  }
+}
+.container .grid-system .details {
+  display: flex;
+}
+@media screen and (min-width: 1440px) {
+  .container .grid-system .details {
+    margin-top: 150px;
+    margin-left: 120px;
+  }
+}
+.container .grid-system .details .detail-box {
+  width: 100%;
+  height: 120px;
   border: 1px solid black;
-  border-radius: 5px;
-  height: 80px;
   text-align: center;
-  padding-top: 20px;
-  margin-left: 10px;
-  font-weight: 600;
+  padding-top: 40px;
+  font-size: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .container .grid-system .details .detail-box {
+    padding-top: 30px;
+  }
 }
