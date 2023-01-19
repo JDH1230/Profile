@@ -194,20 +194,29 @@ h1 {
   height: 140px;
   border: 1px solid transparent;
   border-radius: 50%;
-  background-color: purple;
+  background-color: transparent;
   margin-bottom: 50px;
+  object-fit: cover;
+  margin-left: 150px;
 }
 @media screen and (min-width: 768px) {
   .container .intro .img-profile-flexbox .img .circle {
     width: 180px;
     height: 180px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .container .intro .img-profile-flexbox .img .circle {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
+}
+.container .intro .img-profile-flexbox .img .circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .container .intro .img-profile-flexbox .profile {
   margin-bottom: 90px;
