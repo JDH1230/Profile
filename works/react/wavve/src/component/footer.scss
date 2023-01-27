@@ -1,0 +1,28 @@
+.footer {
+    margin-top: 80px;
+    p{
+        color: white;
+        margin-left: 300px;
+    }    
+
+    ul {
+        display: flex;
+        margin-left: 270px;
+        li {
+            color: #a4a4a4;
+            list-style: none;
+            margin-right: 25px;
+            font-size: 14px;
+        }
+    }
+
+    .info {
+        font-size: 12px;
+        color: #a4a4a4;
+        line-height: 10px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}

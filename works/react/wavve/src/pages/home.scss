@@ -1,0 +1,32 @@
+.detail {
+    background-color: transparent;
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    width: 1200px;
+}
+
+.subtitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.dramadetail {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    margin-left: 300px;
+    img {
+        width: 260px;
+        margin-right: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}

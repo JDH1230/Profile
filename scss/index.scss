@@ -6,10 +6,14 @@ body {
     color:white;
 }
 
-h1 {
+.Welcome {
     font-size: 40px;
+    margin-top: 120px;
 }
 
+#typeStyle {
+    margin-bottom: 420px;
+}
 
 .container {
     background-color: #033a3d;
@@ -101,7 +105,7 @@ h1 {
                     a {
                         color: white;
                         text-decoration: none;
-    
+                        
                         &:hover {
                             text-decoration:underline;
                         }
@@ -132,7 +136,10 @@ h1 {
 
     .intro {
         position: relative;
-        
+        @include responsive (pc-screens) {
+            margin-bottom: 300px;
+        }
+
         p{
             font-size: 40px;
             text-align: left;
@@ -166,12 +173,20 @@ h1 {
 
             .img{
                 text-align: center;
-                padding-right: 140px;
+                padding-right: 170px;
                 height: 180px;
 
                 @include responsive (tablet-screens) {
                     padding-right: 250px;
                 }
+
+                @include responsive (pc-screens) {
+                    width: 250px;
+                    height: 250px;
+                    border: 5px solid white;
+                    border-radius: 50%;
+                }
+
 
                 .circle {
                     position: absolute;
@@ -193,6 +208,7 @@ h1 {
                     @include responsive (pc-screens) {
                         width: 230px;
                         height: 230px;
+                        margin-left: 10px;
                     }
 
                     img {
@@ -248,6 +264,7 @@ h1 {
         position: relative;
         @include responsive (pc-screens) {
             margin-top: 100px;
+            margin-bottom: 250px;
         }
 
         p{
@@ -446,7 +463,7 @@ h1 {
             font-size: 28px;
             position: relative;
             width: 100%;
-
+            color: yellow;
             @include responsive (pc-screens){
                 text-align: left;
             }

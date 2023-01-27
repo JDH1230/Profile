@@ -1,0 +1,53 @@
+
+.TodoEdit {
+  position: fixed;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  
+  .TodoEdit-form {
+    z-index: 999;
+    position: relative;
+    width: 360px;
+    height: 220px;
+    border-radius: 10px;
+    background: #adb5db;
+  
+    input {
+      display: block;
+      outline: none;
+      border: none;
+      background: none;
+      margin: 0 auto;
+      margin-top: 2rem;
+      padding: 0.5rem;
+      padding-top: 4rem;
+      line-height: 1.5;
+      font-size: 1.2rem;
+      color: #000;
+      border-bottom: 2px solid black;
+
+      &::placeholder {
+        color: black;
+      }
+    } // input
+  
+    .edit-btn {
+      position: absolute;
+      bottom: 10px; left: 50%;
+      transform: translateX(-50%);
+      outline: none;
+      border: none;
+      background: none;
+      background-color: #797fa0;
+      color: #fff;
+      padding: 0.3rem 1rem;
+      font-size: 1.5rem;
+      transition: background-color ease-in;
+      
+      &:hover {
+        cursor: pointer;
+        background: #595e77;
+      }
+    } // button
+  } // form
+}
